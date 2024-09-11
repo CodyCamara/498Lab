@@ -10,7 +10,10 @@ def main():
         "What is 2 + 2?": "4",
         "What is the color of the sky?": "blue",
         "Who wrote 'To Kill a Mockingbird'?": "harper lee",
-        "What is the largest planet in our solar system?": "jupiter"
+        "What is the largest planet in our solar system?": "jupiter",
+
+	# Added additional question into question list
+	"What is the name of our professor?": "firas khatib"
     }
 
     score = 0
@@ -19,7 +22,8 @@ def main():
 
     for question in question_list:
         if ask_question(question, questions[question]):
-            print("Correct!")
+	    # Modified correct output print	
+            print("Correct! Woohoo!")
             score += 1
         else:
             print("Wrong!")
